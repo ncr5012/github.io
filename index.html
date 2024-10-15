@@ -61,10 +61,17 @@
         <h1>Welcome to Glyphz!</h1>
         <p>Start learning a new language now!</p>
 
-        <!-- Download Button for App Store -->
+        <!-- Download Buttons Section -->
         <div class="download-buttons">
+            <!-- iOS App Store Link -->
             <a href="https://apps.apple.com/us/app/glyphz/id6720708677">
-                <img src="appstore-badge.png" alt="Download on the App Store">
+                <!-- Dynamic App Store badge (uses Apple URL as a fallback) -->
+                <img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2023-10-01&kind=iossoftware" alt="Download on the App Store" onerror="this.src='appstore-icon.png';">
+            </a>
+
+            <!-- Android Waitlist Link -->
+            <a href="android-waitlist.html">
+                <img src="playstore-icon.png" alt="Join the Android Waitlist">
             </a>
         </div>
 
