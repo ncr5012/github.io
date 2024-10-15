@@ -25,6 +25,9 @@
             color: #666666;
             font-size: 18px;
         }
+        .download-buttons {
+            margin-top: 20px;
+        }
         .download-buttons img {
             width: 200px;
             margin: 20px 10px;
@@ -40,18 +43,44 @@
         footer a:hover {
             text-decoration: underline;
         }
+        /* Additional styling for the form */
+        .waiting-list {
+            margin-top: 30px;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            max-width: 640px;
+            height: 586px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="Icon.png" alt="App Logo" class="app-logo">
-        <h1>Welcome to Glphyz!</h1>
+        <h1>Welcome to Glyphz!</h1>
         <p>Start learning a new language now!</p>
-    <footer>
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="terms.html">Terms of Service</a>
-        <a href="delete.html">Delete Account</a>
-        <a href="support.html">Support</a>
-    </footer>
+
+        <!-- Download Button for App Store -->
+        <div class="download-buttons">
+            <a href="https://apps.apple.com/us/app/glyphz/id6720708677">
+                <img src="appstore-badge.png" alt="Download on the App Store">
+            </a>
+        </div>
+
+        <!-- Waiting List Form -->
+        <div class="waiting-list">
+            <p>Android user? Join our waiting list to get notified when the app is released!</p>
+            <!-- Embed Google Form -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHj3x1zvDFCiTqlvZvb9Yg2H8FqZGcs2DgRDaLmquT0PI_1Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+
+        <footer>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="delete.html">Delete Account</a> |
+            <a href="support.html">Support</a>
+        </footer>
+    </div>
 </body>
 </html>
