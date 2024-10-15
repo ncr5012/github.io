@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Glyphz</title>
     <meta name="description" content="Download our mobile app for Android and iOS.">
+    <!-- Smart App Banner for iOS -->
+    <meta name="apple-itunes-app" content="app-id=6720708677">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,6 +34,20 @@
             width: 200px;
             margin: 20px 10px;
         }
+        .android-button {
+            display: inline-block;
+            background-color: #a4c639; /* Android green */
+            color: #ffffff;
+            padding: 15px 25px;
+            margin: 20px 10px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+        .android-button:hover {
+            background-color: #8ab434;
+        }
         footer {
             margin-top: 50px;
         }
@@ -43,16 +59,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-        /* Additional styling for the form */
-        .waiting-list {
-            margin-top: 30px;
-        }
-        iframe {
-            border: none;
-            width: 100%;
-            max-width: 640px;
-            height: 586px;
-        }
     </style>
 </head>
 <body>
@@ -61,25 +67,14 @@
         <h1>Welcome to Glyphz!</h1>
         <p>Start learning a new language now!</p>
 
-        <!-- Download Buttons Section -->
+        <!-- Download Buttons -->
         <div class="download-buttons">
-            <!-- iOS App Store Link -->
+            <!-- App Store Button -->
             <a href="https://apps.apple.com/us/app/glyphz/id6720708677">
-                <!-- Dynamic App Store badge (uses Apple URL as a fallback) -->
-                <img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2023-10-01&kind=iossoftware" alt="Download on the App Store" onerror="this.src='appstore-icon.png';">
+                <img src="images/appstore-badge.png" alt="Download on the App Store">
             </a>
-
-            <!-- Android Waitlist Link -->
-            <a href="android-waitlist.html">
-                <img src="playstore-icon.png" alt="Join the Android Waitlist">
-            </a>
-        </div>
-
-        <!-- Waiting List Form -->
-        <div class="waiting-list">
-            <p>Android user? Join our waiting list to get notified when the app is released!</p>
-            <!-- Embed Google Form -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHj3x1zvDFCiTqlvZvb9Yg2H8FqZGcs2DgRDaLmquT0PI_1Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- Android Waitlist Button -->
+            <a href="android-waitlist.html" class="android-button">Join Android Waitlist</a>
         </div>
 
         <footer>
