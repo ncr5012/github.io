@@ -15,6 +15,9 @@
             text-align: center;
             padding: 50px 20px;
         }
+        .app-logo {
+            max-width: 200px;
+        }
         h1 {
             color: #333333;
         }
@@ -22,12 +25,29 @@
             color: #666666;
             font-size: 18px;
         }
-        iframe {
-            border: none;
-            width: 100%;
-            max-width: 640px;
-            height: 586px;
-            margin-top: 30px;
+        .download-buttons {
+            margin-top: 20px;
+        }
+        .download-buttons img {
+            width: 200px;   /* Fixed width for uniformity */
+            height: 60px;   /* Fixed height for uniformity */
+            object-fit: contain; /* Ensures images retain their aspect ratio */
+            margin: 20px 10px;
+            background: transparent; /* Ensures background is transparent */
+        }
+        .android-button {
+            display: inline-block;
+            background-color: #a4c639; /* Android green */
+            color: #ffffff;
+            padding: 15px 25px;
+            margin: 20px 10px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+        .android-button:hover {
+            background-color: #8ab434;
         }
         footer {
             margin-top: 50px;
@@ -38,16 +58,6 @@
             text-decoration: none;
         }
         footer a:hover {
-            text-decoration: underline;
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #0066cc;
-            font-size: 16px;
-        }
-        .back-button:hover {
             text-decoration: underline;
         }
     </style>
