@@ -22,7 +22,7 @@
             return "unknown";
         }
 
-        async function redirectToStore() {
+        function redirectToStore() {
             var os = getMobileOperatingSystem();
             console.log("Detected OS:", os);
 
@@ -46,7 +46,7 @@
             }
 
             // Send ping to the server
-            await fetch('https://script.google.com/macros/s/AKfycbwSrC7uW3GXB_45Qnb6opLjyG06xpFNSYLjIEzGvXhWEAVJW2imyJQd8DJg4s40QIST/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwSrC7uW3GXB_45Qnb6opLjyG06xpFNSYLjIEzGvXhWEAVJW2imyJQd8DJg4s40QIST/exec', {
                 method: 'POST',
                 body: JSON.stringify({ location, event }),
                 headers: { 'Content-Type': 'application/json' }
