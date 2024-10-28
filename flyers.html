@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Add checks for other devices if necessary
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+
+            return "unknown";
+        }
+
+        function redirectToStore() {
+            var os = getMobileOperatingSystem();
+            if (os === "iOS") {
+                window.location.href = 'https://apps.apple.com/us/app/glyphz/id6720708677'; // Change YOUR_APP_ID to your app's ID
+            } else if (os === "Android") {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.waypost&hl=en_US'; // Change YOUR_PACKAGE_NAME to your package name
+            } else {
+                window.location.href = 'https://glyphzapp.com'; // Fallback URL
+            }
+        }
+
+        // Optional: Log visit here with a server-side request if needed
+
+        // Perform redirection after a short delay if you need to process something before redirect
+        window.onload = function() {
+            setTimeout(redirectToStore, 100); // Redirect after 100 milliseconds
+        }
+    </script>
+</head>
+<body>
+    <h1>Please wait, you are being redirected...</h1>
+</body>
+</html>
