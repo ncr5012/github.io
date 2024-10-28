@@ -32,12 +32,12 @@
 
             if (os === "iOS") {
                 // Replace with your actual App Store URL
-                ridirectUrl = 'https://apps.apple.com/us/app/glyphz/id6720708677';
+                redirectUrl = 'https://apps.apple.com/us/app/glyphz/id6720708677';
                 event = "iOS";
 
             } else if (os === "Android") {
                 // Replace with your actual Google Play Store URL
-                rdirectUrl = 'https://play.google.com/store/apps/details?id=com.waypost&hl=en_US';
+                redirectUrl = 'https://play.google.com/store/apps/details?id=com.waypost&hl=en_US';
                 event = "Android";
             } else {
                 // Fallback URL for other devices
@@ -51,6 +51,7 @@
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                keepalive: true,
                 body: JSON.stringify({
                     location: location,
                     event: event
