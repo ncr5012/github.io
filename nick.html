@@ -22,7 +22,7 @@
             return "unknown";
         }
 
-        function redirectToStore() {
+        async function redirectToStore() {
             var os = getMobileOperatingSystem();
             console.log("Detected OS:", os);
 
@@ -46,7 +46,7 @@
             }
 
             // Send ping to the server
-            fetch('https://sms.text4gpt.com/api/glyphzmarketing', {
+            await fetch('https://sms.text4gpt.com/api/glyphzmarketing', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
