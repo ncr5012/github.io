@@ -22,7 +22,7 @@
             return "unknown";
         }
 
-        async function redirectToStore() {
+        function redirectToStore() {
             var os = getMobileOperatingSystem();
             console.log("Detected OS:", os);
 
@@ -46,19 +46,11 @@
             }
 
             // Send ping to the server
-            await fetch('https://sms.text4gpt.com/api/glyphzmarketing', {
+            await fetch('https://script.google.com/macros/s/AKfycbzlQ7hK-E5FSUv9RVC7JglL2jyA7xW4RNcqKKihlNRgwaocH9ptbJhF6gD0M7kQuSsk/exec', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                keepalive: true,
-                body: JSON.stringify({
-                    location: location,
-                    event: event
-                })
-            }).catch(function(error) {
-                console.error('Error sending ping:', error);
-            });
+                body: JSON.stringify({ location, event }),
+                headers: { 'Content-Type': 'application/json' }
+            }).catch(console.error);
 
             // Redirect the user
             window.location.href = redirectUrl;
