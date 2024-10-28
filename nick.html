@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+
+            return "unknown";
+        }
+
+        function redirectToStore() {
+            var os = getMobileOperatingSystem();
+            console.log("Detected OS:", os);
+
+            var location = "Nick";
+            var event;
+            var redirectUrl;
+
+            if (os === "iOS") {
+                // Replace with your actual App Store URL
+                ridirectUrl = 'https://apps.apple.com/us/app/glyphz/id6720708677';
+                event = "iOS";
+
+            } else if (os === "Android") {
+                // Replace with your actual Google Play Store URL
+                rdirectUrl = 'https://play.google.com/store/apps/details?id=com.waypost&hl=en_US';
+                event = "Android";
+            } else {
+                // Fallback URL for other devices
+                redirectUrl = 'https://glyphzapp.com';
+                event = "Other";
+            }
+
+            // Send ping to the server
+            fetch('https://yourserver.com/api/ping', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    location: location,
+                    event: event
+                })
+            }).catch(function(error) {
+                console.error('Error sending ping:', error);
+            });
+
+            // Redirect the user
+            window.location.href = redirectUrl;
+        }
+
+        window.onload = function() {
+            redirectToStore();
+        }
+    </script>
+</head>
+<body>
+    <h1>Please wait, you are being redirected...</h1>
+</body>
+</html>
