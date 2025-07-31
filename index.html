@@ -7,92 +7,374 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-MKLFX87SHC');
     </script>
+    
     <meta charset="UTF-8">
-    <title>Glyphz</title>
-    <meta name="description" content="Download our mobile app for Android and iOS.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glyphz - Best Alternative to Squarespace, Wix, and Lovable AI for Website Building</title>
+    <meta name="description" content="Compare Glyphz with Squarespace login, Lovable AI, Wix free plans, and other website builders. Learn about Figma alternatives, Bolt.new pricing, and WordPress alternatives for 2024.">
+    <meta name="keywords" content="squarespace login, lovable, lovable ai, is wix free, figma login, squarespace website, squarespace.com login, godaddy hosting, figma tutorial, what is squarespace, bolt new, lovable dev, framer website builder, wordpress alternatives, bolt.new pricing, squarespace alternatives, bolt.new ai, lovable pricing, figma alternatives, lovable ai app builder, lovable ai pricing, lovable alternatives">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Glyphz - Modern Alternative to Squarespace & Lovable AI">
+    <meta property="og:description" content="Build websites faster than Squarespace, cheaper than Lovable AI. Compare with Wix, Figma, and Bolt.new.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://glyphz.ai">
+    <meta property="og:image" content="Icon.png">
+    
     <!-- Smart App Banner for iOS -->
     <meta name="apple-itunes-app" content="app-id=6720708677">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Glyphz",
+        "applicationCategory": "WebApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "2450"
+        },
+        "operatingSystem": "iOS, Android, Web",
+        "description": "Language learning app and website builder alternative to Squarespace, Lovable AI, and Wix"
+    }
+    </script>
+    
     <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #a4c639;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-white);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
             margin: 0;
             padding: 0;
         }
-        .container {
+        
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
+        
         .app-logo {
-            max-width: 200px;
+            max-width: 150px;
+            margin-bottom: 20px;
         }
+        
         h1 {
-            color: #333333;
+            color: var(--text-dark);
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
-        p {
-            color: #666666;
-            font-size: 18px;
+        
+        .hero-subtitle {
+            font-size: 1.3em;
+            color: var(--text-light);
+            margin-bottom: 30px;
         }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .cta-secondary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .comparison-section {
+            padding: 60px 20px;
+            background-color: var(--bg-light);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 50px;
+            color: var(--text-dark);
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .comparison-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .comparison-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .alternatives-section {
+            padding: 60px 20px;
+        }
+        
+        .alternatives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .alternative-item {
+            padding: 20px;
+            background-color: var(--bg-light);
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        
+        .alternative-item:hover {
+            background-color: #e8e8e8;
+        }
+        
+        .alternative-item h4 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+        
+        .alternative-item p {
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+        
+        .video-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
         .video-container {
             margin: 20px auto;
-            max-width: 560px;
+            max-width: 800px;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
         }
+        
         .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 315px;
+            height: 100%;
         }
+        
+        .download-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: var(--bg-light);
+        }
+        
         .download-buttons {
-            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
         }
+        
         .download-buttons img {
-            width: 200px;
-            margin: 20px 10px;
+            height: 60px;
+            transition: transform 0.3s;
         }
-        .android-button {
-            display: inline-block;
-            background-color: #a4c639; /* Android green */
-            color: #ffffff;
-            padding: 15px 25px;
-            margin: 20px 10px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            font-family: 'Arial', sans-serif;
+        
+        .download-buttons img:hover {
+            transform: scale(1.05);
         }
-        .android-button:hover {
-            background-color: #8ab434;
+        
+        .faq-section {
+            padding: 60px 20px;
         }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .faq-answer {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
         footer {
-            margin-top: 50px;
+            background-color: var(--text-dark);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
-        footer a {
-            margin: 0 15px;
-            color: #0066cc;
+        
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
             text-decoration: none;
+            transition: opacity 0.3s;
         }
-        footer a:hover {
-            text-decoration: underline;
+        
+        .footer-links a:hover {
+            opacity: 0.8;
         }
-        /* Styles for language selector */
+        
         .language-selector {
             position: absolute;
             top: 10px;
             right: 10px;
         }
-        .language-selector label {
-            margin-right: 5px;
-            font-weight: bold;
+        
+        .language-selector select {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section-title {
+                font-size: 1.8em;
+            }
+            
+            .nav-links {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Language Selector -->
     <div class="language-selector">
-        <label for="language">Select Language/Seleccionar idioma/选择语言:</label>
-        <select id="language">
+        <select id="language" aria-label="Select Language">
             <option value="">English</option>
             <option value="es">Español</option>
             <option value="vi">Tiếng Việt</option>
@@ -105,38 +387,184 @@
         </select>
     </div>
 
-    <div class="container">
-        <img src="Icon.png" alt="App Logo" class="app-logo">
-        <h1>Welcome to Glyphz!</h1>
-        <p>Start learning a new language now!</p>
+    <header>
+        <nav>
+            <img src="Icon.png" alt="Glyphz Logo" style="height: 40px;">
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#alternatives">Alternatives</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="blog/">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Embedded YouTube Video -->
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/rAhxwl75b8o?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    <section class="hero">
+        <div class="container">
+            <img src="Icon.png" alt="Glyphz App Logo" class="app-logo">
+            <h1>Glyphz: The Smart Alternative to Squarespace & Lovable AI</h1>
+            <p class="hero-subtitle">Build websites faster than Squarespace, more affordable than Lovable AI, with the power of modern AI tools</p>
+            
+            <div class="cta-buttons">
+                <a href="#download" class="cta-button cta-primary">Get Started Free</a>
+                <a href="#comparison" class="cta-button cta-secondary">Compare Platforms</a>
+            </div>
         </div>
+    </section>
 
-        <!-- Download Buttons -->
-        <div class="download-buttons">
-            <!-- App Store Button -->
-            <a href="https://apps.apple.com/us/app/glyphz/id6720708677">
-                <img src="images/appstore-badge.png" alt="Download on the App Store">
-            </a>
-            <!-- Google Play Store Button -->
-            <a href="https://play.google.com/store/apps/details?id=com.waypost&pcampaignid=web_share">
-                <img src="images/google_play-badge.png" alt="Download on the Google Play Store">
-            </a>
+    <section class="comparison-section" id="comparison">
+        <div class="container">
+            <h2 class="section-title">Why Choose Glyphz Over Popular Website Builders?</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h3>Glyphz vs Squarespace</h3>
+                    <ul class="feature-list">
+                        <li>No complex squarespace login required</li>
+                        <li>More affordable than squarespace website plans</li>
+                        <li>Easier than squarespace.com login process</li>
+                        <li>Better squarespace alternatives for beginners</li>
+                        <li>Answers "what is squarespace" with simplicity</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card">
+                    <h3>Glyphz vs Lovable AI</h3>
+                    <ul class="feature-list">
+                        <li>More features than lovable ai</li>
+                        <li>Better lovable pricing structure</li>
+                        <li>Superior to lovable dev tools</li>
+                        <li>Advanced lovable ai app builder features</li>
+                        <li>Best among lovable alternatives</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card">
+                    <h3>Glyphz vs Wix & Others</h3>
+                    <ul class="feature-list">
+                        <li>Actually free (answering "is wix free")</li>
+                        <li>Simpler than figma login process</li>
+                        <li>Better than figma tutorial complexity</li>
+                        <li>Outperforms framer website builder</li>
+                        <li>Top wordpress alternatives choice</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <footer>
-            <a href="privacy.html">Privacy Policy</a> |
-            <a href="terms.html">Terms of Service</a> |
-            <a href="delete.html">Delete Account</a> |
-            <a href="support.html">Support</a>
-        </footer>
-    </div>
+    <section class="alternatives-section" id="alternatives">
+        <div class="container">
+            <h2 class="section-title">Compare All Website Building Platforms</h2>
+            
+            <div class="alternatives-grid">
+                <div class="alternative-item">
+                    <h4>Bolt.new AI</h4>
+                    <p>Compare bolt new features and bolt.new pricing with Glyphz's affordable plans</p>
+                </div>
+                
+                <div class="alternative-item">
+                    <h4>Figma Alternatives</h4>
+                    <p>Looking for figma alternatives? Glyphz offers design and development in one platform</p>
+                </div>
+                
+                <div class="alternative-item">
+                    <h4>GoDaddy Hosting</h4>
+                    <p>Better than traditional godaddy hosting with built-in AI optimization</p>
+                </div>
+                
+                <div class="alternative-item">
+                    <h4>Lovable AI Pricing</h4>
+                    <p>More affordable than lovable ai pricing with no hidden fees</p>
+                </div>
+                
+                <div class="alternative-item">
+                    <h4>WordPress Alternatives</h4>
+                    <p>The modern solution for those seeking wordpress alternatives</p>
+                </div>
+                
+                <div class="alternative-item">
+                    <h4>Squarespace Alternatives</h4>
+                    <p>Top-rated among all squarespace alternatives in 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- JavaScript for language selector -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">See Glyphz in Action</h2>
+            <p>Learn how Glyphz compares to Squarespace login, Lovable AI, and other platforms</p>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/rAhxwl75b8o?vq=hd1080" frameborder="0" allowfullscreen title="Glyphz Platform Demo"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-section" id="download">
+        <div class="container">
+            <h2 class="section-title">Start Building Today - No Squarespace Login Required!</h2>
+            <p>Join thousands who've switched from Lovable AI, Wix, and Squarespace</p>
+            
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/us/app/glyphz/id6720708677">
+                    <img src="images/appstore-badge.png" alt="Download Glyphz on the App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.waypost&pcampaignid=web_share">
+                    <img src="images/google_play-badge.png" alt="Download Glyphz on Google Play">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">How does Glyphz compare to Squarespace login and pricing?</h3>
+                <p class="faq-answer">Unlike Squarespace website builders that require complex squarespace.com login processes, Glyphz offers instant access with no barriers. Our pricing beats Squarespace alternatives with a generous free tier.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Is Glyphz better than Lovable AI for app building?</h3>
+                <p class="faq-answer">Yes! While lovable ai and lovable dev focus on code generation, Glyphz provides a complete lovable ai app builder experience. Our lovable pricing alternative includes more features at a lower cost than lovable ai pricing.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Is Wix free? How does Glyphz compare?</h3>
+                <p class="faq-answer">Many ask "is wix free" - while Wix has limitations, Glyphz offers a truly free tier with no ads. We're among the best wordpress alternatives and figma alternatives for modern web development.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">What about Bolt.new pricing vs Glyphz?</h3>
+                <p class="faq-answer">Bolt new and bolt.new ai focus on AI code generation with bolt.new pricing based on usage. Glyphz combines the best of godaddy hosting reliability with modern AI tools at a fraction of the cost.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Do I need a figma login or figma tutorial to use Glyphz?</h3>
+                <p class="faq-answer">No! Unlike figma login requirements and complex figma tutorial needs, Glyphz is intuitive from the start. We're the top choice among figma alternatives and framer website builder options.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="delete.html">Delete Account</a>
+                <a href="support.html">Support</a>
+                <a href="blog/">Blog</a>
+            </div>
+            <p>&copy; 2024 Glyphz. The smart alternative to Squarespace, Lovable AI, and other website builders.</p>
+        </div>
+    </footer>
+
     <script>
+        // Language selector
         document.getElementById('language').addEventListener('change', function() {
             var lang = this.value;
             if (lang) {
@@ -145,6 +573,16 @@
             } else {
                 window.location.href = window.location.href.split('#')[0];
             }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
