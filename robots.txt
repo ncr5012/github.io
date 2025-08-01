@@ -1,0 +1,8 @@
+# Robots.txt for glyphzapp.com
+# Allow all web crawlers access to all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://glyphzapp.com/sitemap.xml
